@@ -8,9 +8,6 @@ function App() {
   return (
     <div className="App">
       
-      <PhotoAppBar testing="pls?"/>
-      <ButtonBox/>
-      
     </div>
     
   );
