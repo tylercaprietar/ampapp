@@ -1,5 +1,99 @@
 .App {
   
   text-align: center;
+  
+}
+.appContainer{
+  width: 1000vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  
+  background-repeat: repeat;
+  /*animation: slideLeftRight 20000s linear infinite;*/
+  
 }
 
+
+.contentContainer{
+  background-color: black;
+  position: fixed;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  height: 90vh;
+  width: 90vw;
+  
+}
+
+.personalPhotoContainer{
+  
+  width: 150px;
+  height: 150px;
+  position:relative;
+  margin: auto;
+  margin-top: 10%;
+  animation: floatUpDown 4s infinite,
+  rotateAnimation 4s linear infinite;
+}
+.typewriter{
+
+  position: static;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.typewriter h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color: white;
+  position: relative;
+  animation: 
+    typing 1.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+@keyframes slideLeft{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+@keyframes slideLeftRight{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+
+  
+}
+
+@keyframes floatUpDown {
+  form, to {margin-top: 10%;}
+  50%{margin-top: 9%;}
+  
+}
+@keyframes rotateAnimation {
+	from, to{transform: rotateY(0deg);}
+	50% {transform: rotateY(180deg);}
+}

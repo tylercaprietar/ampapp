@@ -12,9 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import headerPhoto1 from '../resources/images/headerphoto1.jpg'
-import headerPhoto2 from '../resources/images/headerphoto2.jpg'
-import headerPhoto3 from '../resources/images/headerphoto3.jpg'
+import headerPhoto1 from '../resources/images/img1.jpg'
+import headerPhoto2 from '../resources/images/img2.jpg'
+import headerPhoto3 from '../resources/images/img3.jpg'
 
 import { GpsFixed } from '@mui/icons-material';
 
@@ -87,7 +87,7 @@ function PhotoAppBar(testing) {
         <div class="headerContainer" style={{height: '200px', width: '100%',background: 'red',position:'fixed',borderBottom:'solid white 3px',zIndex: 0}}>
 
 </div>
-<div id="pC1" class="photoContainer" style={{background: 'black',marginLeft: '150px',marginTop: '75px',border:'solid white 3px',height: '300px', width: '200px',position:'fixed',zIndex: 2}}>
+<div id="pC1" class="photoContainer" style={{background: 'black',marginLeft: '150px',marginTop: '75px',border:'solid white 3px',height: '100%', width: '200px',position:'fixed',zIndex: 2}}>
     <div style={{position: "absolute", height: '100%', width: '100%',zIndex: 5}}>
         <img class="headerimg" id="headerimg1" style={{ height: '100%', width: '100%', opacity: 1.0, zIndex: 1}} src={images[0]} onClick={() => imageClick()} />
     </div>
