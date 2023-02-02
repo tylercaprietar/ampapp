@@ -91,6 +91,9 @@ function PhotoAppBar(testing) {
     <div style={{position: "absolute", height: '100%', width: '100%',zIndex: 5}}>
         <img class="headerimg" id="headerimg1" style={{ height: '100%', width: '100%', opacity: 1.0, zIndex: 1}} src={images[0]} onClick={() => imageClick()} />
     </div>
+    <div class='logoShadow'>
+        
+    </div>
 
     <div  style={{position: "absolute", height: '100%', width: '100%',zIndex: 4}}>
         <img class="headerimg" id="headerimg2" style={{ height: '100%', width: '100%', opacity: 0.0, zIndex: 1}} src={images[1]} onClick={() => imageClick()} />
