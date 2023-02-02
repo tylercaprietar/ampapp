@@ -9,7 +9,8 @@ class WebsiteCoverClass extends Component{
       bottomAnimation: 'none',
       bottomColor: 'transparent',
       topAnimation: 'typing 1.5s steps(30, end), blink-caret .75s step-end 2',
-      topBorderRightColor: 'transparent'
+      topBorderRightColor: 'transparent',
+      coverAnimation: 'none'
     };
 
     handleTopAnimationEnd(){
@@ -18,7 +19,10 @@ class WebsiteCoverClass extends Component{
     };
 
     handleLogoOnClick(){
-      this.componentWillUnmount();
+      this.setState({bottomAnimation: 'none'});
+      this.setState({bottomAnimation: 'fadeOutCover 10s'});
+
+      console.log( this.state.coverAnimation);
     }
 
      
@@ -29,7 +33,7 @@ class WebsiteCoverClass extends Component{
             {/* Contains the background for changing and such*/}
             <div id='appContainer' class='appContainer'>
               {/*  Contains the pages of the website */}
-              <div id='contentContainer' class="contentContainer">
+              <div id='contentContainer' class="contentContainer" >
 
                 {/* Contains the front page of the website */ }
                 <div class='frontPage'>

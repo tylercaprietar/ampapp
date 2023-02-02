@@ -137,3 +137,7 @@
 	from, to{transform: rotateY(0deg);}
 	50% {transform: rotateY(180deg);}
 }
+@keyframes fadeOutCover {
+  0%{color: white;}
+  100% {color: red;}
+}
